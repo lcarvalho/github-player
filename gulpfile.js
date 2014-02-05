@@ -1,7 +1,7 @@
-var gulp = require('gulp');
-var gutil = require('gulp-util');
-var jshint = require('gulp-jshint');
-var stylish = require('jshint-stylish');
+var gulp = require('gulp'),
+    gutil = require('gulp-util'),
+    jshint = require('gulp-jshint'),
+    stylish = require('jshint-stylish');
 
 gulp.task('default', function(){
   // place code for your default task here
@@ -13,7 +13,9 @@ gulp.task('lint', function() {
     .pipe(jshint.reporter(stylish));
 });
 
-var watcher = gulp.watch('./player/js/*.js', ['lint',]);
-watcher.on('changed', function(event){
-  console.log('File '+event.path+' was '+event.type+', running tasks...');
+gulp.task('watch', function() {
+  var watcher = gulp.watch('./player/js/*.js', ['lint',]);
+  watcher.on('changed', function(event){
+    console.log('File '+event.path+' was '+event.type+', running tasks...');
+  });
 });
