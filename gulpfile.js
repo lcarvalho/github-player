@@ -19,9 +19,7 @@ gulp.task('lint', function() {
         .pipe(jshint.reporter(stylish));
 });
 
-gulp.task('watch', function() {
-    var watcher = gulp.watch('./player/js/*.js', ['lint',]);
-    watcher.on('changed', function(event){
-        console.log('File '+event.path+' was '+event.type+', running tasks...');
-    });
+var watcher = gulp.watch('./player/js/*.js', ['lint',]);
+watcher.on('changed', function(event){
+    console.log('File '+event.path+' was '+event.type+', running tasks...');
 });
