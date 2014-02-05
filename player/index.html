@@ -14,6 +14,8 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/alertify.core.css">
+        <link rel="stylesheet" href="css/alertify.default.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
@@ -23,14 +25,17 @@
 
         <!-- Add your site or application content here -->
         <p>Hello world! This is HTML5 Boilerplate.</p>
+        <input id="repos-url" value="git@github.com:lcarvalho/github-player.git" />
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/vendor/underscore-min.js"></script>
         <script src="js/vendor/oauth.min.js"></script>
+        <script src="js/vendor/alertify.js"></script>
+        <script src="js/vendor/octokit.js"></script>
         <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
         <script src="js/player.js"></script>
-
+        <script src="js/main.js"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
