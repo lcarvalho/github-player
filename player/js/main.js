@@ -1,5 +1,6 @@
 /* global $, player*/
 
 $(document).ready(function () {
-    player.init();
+    //player.init();
+//    window.ghRoot = github.init();
 });
