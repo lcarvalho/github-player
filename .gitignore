@@ -6,3 +6,4 @@
 *.swo
 node_modules/
 *.log
+player/js/vendor/*
