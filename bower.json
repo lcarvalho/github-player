@@ -1,0 +1,24 @@
+{
+  "name": "github-player",
+  "version": "0.0.1",
+  "homepage": "https://github.com/lcarvalho/github-player",
+  "authors": [
+    "Lucas Carvalho <lucascarvalho@gmail.com>"
+  ],
+  "description": "GitHub Player",
+  "license": "THE BEER-WARE LICENSE",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "player/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "alertify": "~0.3.10",
+    "underscore": "~1.6.0",
+    "oauth-js": "~0.2.0"
+  }
+}
