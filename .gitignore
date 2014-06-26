@@ -6,4 +6,5 @@
 *.swo
 node_modules/
 *.log
-player/js/vendor/*
+player/vendor/*
+.bowerrc
