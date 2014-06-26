@@ -31,9 +31,8 @@ Resource = (function(options) {
             success: function(data) {
                 console.log('Obteve os dados da API');
                 console.log(data);
-                self.update
                 $.each(data, function(key, val) {
-                    self.update
+                    console.log(key, val);
                     console.log(typeof key);
                     if (typeof val === 'string') {
                         if ((key.indexOf('_url' !== -1) && (val.indexOf('https://api.github.com') !== -1))) {
@@ -78,8 +77,11 @@ Resource = (function(options) {
         getCommits: function getCommits(userAuth) {
             console.log('Loading commits...');
             console.log(userAuth);
+            var github = new GitHub({token: userAuth.access_token,
+                                     auth: "oauth"}),
+                repo = github.repository_url({'owner': 'lcarvalho', 'repo': 'github-player'});
+            console.log(repo);
         }
-
     };
 
 })(window, document);
