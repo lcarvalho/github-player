@@ -1,5 +1,8 @@
+/* global window*/
+
 // Avoid `console` errors in browsers that lack a console.
-(function() {
+(function(window) {
+    'use strict';
     var method;
     var noop = function () {};
     var methods = [
@@ -19,6 +22,6 @@
             console[method] = noop;
         }
     }
-}());
+}(window));
 
 // Place any jQuery/helper plugins in here.

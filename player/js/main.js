@@ -1,6 +1,12 @@
-/* global $, player*/
+/* global $, login, document*/
 
-$(document).ready(function () {
-    //player.init();
-//    window.ghRoot = github.init();
-});
+(function(document) {
+    'use strict';
+
+    $(document).ready(function () {
+        $('#btn-watch').on('click', function () {
+            login.init();
+        });
+    });
+
+})(document);
